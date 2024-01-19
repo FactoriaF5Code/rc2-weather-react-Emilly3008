@@ -1,4 +1,5 @@
-import { Box, Container, TextField, Typography, LoadingButtom } from '@mui/material';
+import { LoadingButton } from '@mui/lab';
+import { Box, Container, TextField, Typography } from '@mui/material';
 import { useState } from 'react';
 
 export default function App() {
@@ -39,13 +40,14 @@ export default function App() {
           onChange={(e) => setCity(e.target.value)}
       />
 
-      <LoadingButtom
+      <LoadingButton
         type='submit'
         variant='contained'
         loading={false}
         loadingIndicator='Cargando...'
       >
-      </LoadingButtom>
+        Buscar
+      </LoadingButton>
     </Box>
     </Container >
   );
